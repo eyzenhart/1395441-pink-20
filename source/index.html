@@ -1,12 +1,246 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  <body class="page__body">
 
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img src="img/index/logo" alt="Логотип PINK" width="74" height="23">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">
+        "PINK" - фотоприложение для раскрашивания серых будней
+      </h1>
+
+      <section class="app">
+        <header class="app__header">
+          <h2 class="visually-hidden">Как скачать приложение</h2>
+          <p class="app__slogan">
+            Взгляните на жизнь иначе!
+          </p>
+          <img class="app__img" src="img/index/app" alt="Демонстрация приложения" width="320" height="286">
+        </header>
+          <button class="app__button" type="button">Скачать приложение</button>
+          <ul class="app-links">
+            <li class="app-link">
+              <img src="img/index/apple" class="app-link__img" alt="Apple" width="47" height="56">
+            </li>
+            <li class="app-link">
+              <img src="img/index/android" class="app-link__img" alt="Android" width="43" height="47">
+            </li>
+            <li class="app-link">
+              <img src="img/index/microsoft" class="app-link__img" alt="Microsoft" width="44" height="41">
+            </li>
+          </ul>
+          <p class="app__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+      </section>
+
+      <section class="advantages">
+        <header class="advantages__header">
+          <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+          <p class="advantages-intro">
+              Устали от серости мегаполиса?<br>
+              Нам есть, что вам предложить!
+          </p>
+        </header>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <h3 class="advantages-item__header">
+              Поднимает настроение
+            </h3>
+            <p class="advantages-item__info">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-item__header">
+              Меняет мир вокруг
+            </h3>
+            <p class="advantages-item__info">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="advantages-item">
+            <h3 class="advantages-item__header">
+              Заводит новых друзей
+            </h3>
+            <p class="advantages-item__info">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+        <img class="advantages__img" src="img/index/app_img2" alt="Демонстрация приложения" width="157" height="320">
+      </section>
+
+      <section class="review">
+        <h2 class="visually-hidden">
+            Отзывы
+        </h2>
+        <h3 class="review__item">
+          Николай Петров
+        </h3>
+        <p class="review__text">
+          «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+        </p>
+        <button class="review__button review__button_current" type="button">1</button>
+        <button class="review__button" type="button">2</button>
+        <button class="review__button" type="button">3</button>
+      </section>
+
+      <section class="plan">
+        <h2 class="visually-hidden">
+          Выберите тарифный план
+        </h2>
+        <table class="plan__table">
+          <tr class="plan__row">
+            <th class="plan__header">
+              База
+              <span class="plan__price">
+                1,99 USD
+              </span>
+            </th>
+            <th class="plan__header">
+              Стандарт
+              <span class="plan__price">
+                3,99 USD
+              </span>
+            </th>
+            <th class="plan__header">
+              Анлим
+              <span class="plan__price">
+                9,99 USD
+              </span>
+            </th>
+          </tr>
+          <tr class="plan__row">
+            <td class="plan__column">
+              Розовый фильтр
+            </td>
+            <td class="plan__column">
+              Розовый фильтр
+            </td>
+            <td class="plan__column">
+              Розовый фильтр
+            </td>
+          </tr>
+          <tr class="plan__row">
+            <td class="plan__column">
+              Смайлики
+            </td>
+            <td class="plan__column">
+              Смайлики
+            </td>
+            <td class="plan__column">
+              Смайлики
+            </td>
+          </tr>
+          <tr class="plan__row">
+            <td class="plan__column">
+              Комментарии
+            </td>
+            <td class="plan__column">
+              Комментарии
+            </td>
+            <td class="plan__column">
+              Комментарии
+            </td>
+          </tr>
+        </table>
+        <button class="plan__button" type="button">1</button>
+        <button class="plan__button plan__button_current" type="button">2</button>
+        <button class="plan__button" type="button">3</button>
+      </section>
+
+      <section class="feedback">
+          <h2 class="feedback__header">
+            Остались вопросы? Свяжитесь с нами!
+          </h2>
+          <ul class="feedback__list">
+            <li class="feedback__item">
+              <p class="feedback__text">
+                Звоните:
+              </p>
+              <a class="feedback__link" href="tel:+78125556666">
+                +7 (812) 555-66-66
+              </a>
+            </li>
+            <li class="feedback__item">
+              <p class="feedback__text">
+                Пишите:
+              </p>
+              <a class="feedback__link" href="#">
+                mail@htmlacademy.ru
+              </a>
+            </li>
+            <li class="feedback__item">
+              <p class="feedback__text">
+                Приезжайте в гости:
+              </p>
+              <a class="feedback__link" href="#">
+                ул. Большая Конюшенная, 19/8
+              </a>
+            </li>
+          </ul>
+      </section>
+
+      <img class="map" src="img/index/map" alt="Офис по адресу ул. Большая Конюшенная, 19/8" width="320" height="200">
+
+    </main>
+
+    <footer class="page-footer">
+      <img class="page-footer__logo" alt="Логотип PINK" width="145" height="40">
+      <ul class="social-media">
+        <li class="social-media__item">
+          <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/index/twitter" alt="Twitter" width="48" height="48">
+          </a>
+        </li>
+        <li class="social-media__item">
+          <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/index/facebook" alt="Facebook" width="48" height="48">
+          </a>
+        </li>
+        <li class="social-media__item">
+          <a class="social-media__link" href="#">
+              <img class="social-media__img" src="img/index/ellipse" alt="Ellipse" width="48" height="48">
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__academy">
+        <p class="page-footer__developed">
+          Разработано
+        </p>
+        <img class="page-footer__academy-img" src="img/index/academy-logo" alt="Логотип HTML Academy" width="27" height="34">
+      </div>
+    </footer>
   </body>
 </html>
