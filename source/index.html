@@ -21,13 +21,13 @@
               <a href="#">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Фотографии</a>
+              <a href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="#">Конкурс</a>
+              <a href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -47,16 +47,16 @@
           </p>
           <img class="app__img" src="img/index/app" alt="Демонстрация приложения" width="320" height="286">
         </header>
-          <button class="app__button" type="button">Скачать приложение</button>
-          <ul class="app-links">
-            <li class="app-link">
-              <img src="img/index/apple" class="app-link__img" alt="Apple" width="47" height="56">
+          <a class="app__button" href="#">Скачать приложение</a>
+          <ul class="app-list">
+            <li class="app-item">
+              <a class="app-link" href="#"><img src="img/index/apple" class="app-link__img" alt="Apple" width="47" height="56"></a>
             </li>
-            <li class="app-link">
-              <img src="img/index/android" class="app-link__img" alt="Android" width="43" height="47">
+            <li class="app-item">
+              <a class="app-link" href="#"><img src="img/index/android" class="app-link__img" alt="Android" width="43" height="47"></a>
             </li>
-            <li class="app-link">
-              <img src="img/index/microsoft" class="app-link__img" alt="Microsoft" width="44" height="41">
+            <li class="app-item">
+              <a class="app-link" href="#"><img src="img/index/microsoft" class="app-link__img" alt="Microsoft" width="44" height="41"></a>
             </li>
           </ul>
           <p class="app__description">
@@ -105,12 +105,12 @@
         <h2 class="visually-hidden">
             Отзывы
         </h2>
-        <h3 class="review__item">
-          Николай Петров
-        </h3>
-        <p class="review__text">
+        <blockquote class="review__item">
+          <cite class="review__author-name">
+            Николай Петров
+          </cite>
           «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-        </p>
+        </blockquote>
         <button class="review__button review__button_current" type="button">1</button>
         <button class="review__button" type="button">2</button>
         <button class="review__button" type="button">3</button>
@@ -239,7 +239,9 @@
         <p class="page-footer__developed">
           Разработано
         </p>
-        <img class="page-footer__academy-img" src="img/index/academy-logo" alt="Логотип HTML Academy" width="27" height="34">
+        <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img class="page-footer__academy-img" src="img/index/academy-logo" alt="Логотип HTML Academy" width="27" height="34">
+        </a>
       </div>
     </footer>
   </body>
