@@ -1,0 +1,32 @@
+.page-footer {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    width: 160px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-footer__developed {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.page-footer__academy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-footer__item:not(:last-of-type) {
+    margin-bottom: 41px;
+}
