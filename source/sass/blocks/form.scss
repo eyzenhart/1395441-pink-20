@@ -54,6 +54,10 @@
   line-height: 30px;
 }
 
+.contest-app__item:not(:first-of-type) {
+  margin-top: 62px;
+}
+
 .contest__label {
   font-weight: normal;
   font-size: 14px;
@@ -63,6 +67,7 @@
 }
 
 .contest_textarea {
+  width: 276px;
   margin: 0 auto;
   font-weight: normal;
   font-size: 18px;
