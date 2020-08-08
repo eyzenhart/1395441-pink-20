@@ -1,0 +1,22 @@
+.page-header__wrapper {
+  width: 320px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: #1D2631;
+}
+
+.page-header__wrapper_dark {
+  background-color: #283645;
+}
+
+.page-header__logo {
+  width: 74px;
+}
+
+.main-nav__toggle {
+  margin-left: auto;
+}

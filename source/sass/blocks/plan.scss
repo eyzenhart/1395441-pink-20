@@ -1,0 +1,47 @@
+.plan {
+  width: 832px;
+  background-color: #F2F2F2;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 49px;
+}
+
+.plan__table {
+  width: 832px;
+}
+
+.plan__header {
+  width: 90px;
+  background-color: #283645;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #283645;
+  border-radius: 1px 0px 0px 0px;
+}
+
+.plan__price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.plan__column {
+  width: 280px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 2px solid #E5E5E5;
+  border-radius: 1px 0px 0px 0px;
+  border-collapse: collapse;
+}
+
+.plan__buttons {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 45px;
+}
