@@ -11,27 +11,5 @@
 @import "blocks/contest.scss";
 @import "blocks/form.scss";
 @import "blocks/main-nav__popup.scss";
-
-body { 
-  background: #ffffff;
-  width: 320px;
-  margin: 0 auto;
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  outline: 2px solid red;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding:0;
-  border:0;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-}
-
-.modal-show {
-  display: flex;
-}
+@import "scaffolding.scss";
+@import "fonts.scss";
