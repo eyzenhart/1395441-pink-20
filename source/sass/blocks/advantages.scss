@@ -1,12 +1,21 @@
-.advantages-intro {
+.advantages-intro_1,
+.advantages-intro_2 {
   padding: 0 20px;
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
 }
 
+.advantages__header {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .advantages__list {
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -30,9 +39,107 @@
 }
 
 .advantages__item__info {
-  width: 280px;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
 }
+
+.advantages__item {
+  width: 100%;
+}
+
+.advantages__img {
+  background-image: url(../../img/iphone-screen-3-tablet@1x.png);
+  background-repeat: no-repeat;
+  width: 268px;
+  height: 547px;
+}
+
+@media (min-width: 660px) {
+  .advantages__img {
+    order: -1;
+    width: 100%;
+  }
+
+  .advantages__wrapper {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .advantages__item__header {
+    text-align: start;
+  }
+
+  .advantages__item__info {
+    text-align: start;
+  }
+
+  .advantages__header {
+    width: 100%;
+  }
+
+  .advantages-intro_1,
+  .advantages-intro_2 {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+    margin-bottom: 10px;
+  }
+
+  .advantages-intro_2 {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__item__img {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .advantages__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    width: 252px;
+    text-align: center;
+  }
+
+  .advantages__item__img {
+    width: 100%;
+    display: flex;
+  }
+
+  .advantages__img {
+    display: none;
+  }
+
+  .advantages-intro_1,
+  .advantages-intro_2 {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .advantages__item__info {
+    text-align: center;
+    width: 252px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages__item__header {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+  }
+}
+
