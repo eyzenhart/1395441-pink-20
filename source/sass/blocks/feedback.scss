@@ -38,3 +38,48 @@
   font-size: 24px;
   line-height: 33px;
 }
+
+@media (min-width: 660px) {
+  .feedback__header {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .feedback__list {
+    width: 660px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .feedback__item_phone,
+  .feedback__item_mail {
+    flex-grow: 1;
+  }
+
+  .feedback__item_address {
+    flex-grow: 2;
+    align-self: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback__header {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .feedback__list {
+    width: 1200px;
+  }
+
+  .feedback__item {
+    flex-grow: 1;
+  }
+}

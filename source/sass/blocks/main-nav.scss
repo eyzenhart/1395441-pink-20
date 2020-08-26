@@ -1,5 +1,11 @@
 .main-nav__toggle {
-  margin-left: auto;
+  margin-left: 0 auto;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.main-nav__toggle_open {
   width: 50px;
   height: 24px;
   background-color: #1D2631;
@@ -14,40 +20,89 @@
 .main-nav__toggle_close {
   width: 23px;
   height: 23px;
+  background-color: #1D2631;
   background-image: url(../../img/icon-menu-cross.svg);
   background-repeat: no-repeat;
   outline: none;
   border: none;
   cursor: pointer;
-  display: none;
+  display: block;
 }
 
 .main-nav__list {
-  width: 320px;
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
+.main-nav {
+  width: 100%;
+}
+
 .main-nav__popup {
-  width: 320px;
+  width: 100%;
   padding: 0;
   display: none;
 }
 
-.main-nav__item {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 32px;
-  background-color: #283645;
-  box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
-  text-align: center;
-  text-transform: uppercase;
+.main-nav__link {
+  display: block;
+  color: #FFFFFF;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-.main-nav__link {
-  text-decoration: none;
-  color: #FFFFFF;
+.main-nav_hidden {
+  display: none;
 }
+
+@media (max-width: 1199px) {
+  .main-nav__link {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #283645;
+    box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-nav {
+    width: 630px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__popup {
+    display: flex;
+  }
+
+  .main-nav__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__link {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    background-color: none;
+    box-shadow: none;
+    text-transform: none;
+  }
+}
+

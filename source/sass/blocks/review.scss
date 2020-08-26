@@ -30,3 +30,68 @@
 .review__button:not(:last-of-type) {
   margin-right: 19px;
 }
+
+.review__autor-name__info {
+  display: none;
+}
+
+.review__icon,
+.review__arrow {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review__item {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .review__autor-name__info {
+    font-style: normal;
+    font-weight: normal;
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .review__icon {
+    display: flex;
+    opacity: 0.1;
+    margin: 0 auto;
+    margin-bottom: 58px;
+  }
+
+  .review__item {
+    width: 688px;
+    margin: 0 auto;
+  }
+
+  .review__buttons {
+    display: none;
+  }
+
+  .review__arrow {
+    display: block;
+  }
+}
