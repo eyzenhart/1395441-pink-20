@@ -1,4 +1,5 @@
-.feedback {
+.feedback__wrapper {
+  padding: 0 20px;
   padding-top: 50px;
   padding-bottom: 74px;
 }
@@ -49,37 +50,64 @@
     text-align: center;
   }
 
-  .feedback__list {
+  .feedback__wrapper {
     width: 660px;
+    padding: 0 20px;
+    padding-top: 50px;
+    padding-bottom: 74px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .feedback__list {
+    width: 544px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 0;
   }
 
-  .feedback__item_phone,
-  .feedback__item_mail {
-    flex-grow: 1;
+  .feedback__item {
+    width: 50%;
   }
 
-  .feedback__item_address {
-    flex-grow: 2;
-    align-self: center;
+  .feedback__item:last-child {
+    width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
+  .feedback {
+    width: 100%;
+  }
+
+  .feedback__wrapper {
+    width: 1200px;
+    padding: 0 130px;
+    padding-top: 50px;
+    padding-bottom: 74px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
   .feedback__header {
     font-size: 50px;
     line-height: 68px;
   }
 
   .feedback__list {
-    width: 1200px;
+    width: 863px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .feedback__item {
-    flex-grow: 1;
+    width: 100%;
+  }
+
+  .feedback__item_mail {
+    order: 1;
   }
 }
