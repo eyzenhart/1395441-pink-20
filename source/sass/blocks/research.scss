@@ -12,6 +12,7 @@
 
 .research__img {
   opacity: 0.1;
+  display: block;
 }
 
 .research__text {
@@ -35,15 +36,29 @@
 
 @media (min-width: 660px) {
   .research {
+    width: 100%;
+    display: flex;
+  }
+
+  .research__wrapper {
+    width: 620px;
+    padding: 50px 20px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .research__text__wrapper {
+    width: 310px;
+    margin: 0;
   }
 }
 
 @media (min-width: 1200px) {
-.research {
-  background-color: #F2F2F2;
-}
+  .research {
+    background-color: #F2F2F2;
+  }
 
   .research__header {
     width: 100%;
