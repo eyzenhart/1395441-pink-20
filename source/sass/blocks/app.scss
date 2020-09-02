@@ -12,6 +12,13 @@
   padding-top: 28px;
   padding-bottom: 38px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 20;
+}
+
+.app__header {
+  position: relative;
+  z-index: 20;
 }
 
 .app__slogan {
@@ -110,13 +117,14 @@
     position: absolute;
     right: 20px;
     bottom: 0;
-    z-index: 1;
+    z-index: 10;
   }
 
   .app__more {
     width: 300px;
     background-color: none;
-    z-index: 2;
+    position: relative;
+    z-index: 20;
   }
 
   .app__slogan {

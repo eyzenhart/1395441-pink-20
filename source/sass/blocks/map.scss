@@ -1,5 +1,16 @@
+// .map__img {
+//   width: 100%;
+//   height: auto;
+// }
+
 .map {
-  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  height: 200px;
+  background-image: url(../../img/bg-map-mobile@1x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 @media (min-width: 660px) {
@@ -8,7 +19,6 @@
   }
 
   .map {
-    width: 100%;
     background-image: url(../../img/bg-map-tablet@1x.jpg);
     width: 660px;
     height: 374px;

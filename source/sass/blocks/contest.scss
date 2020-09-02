@@ -1,25 +1,92 @@
 .contest__header {
-  width: 228px;
-  margin: 0 auto;
-  padding-top: 36px;
-  padding-bottom: 51px;
+  width: 100%;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+
+}
+
+.contest__header__text {
   font-weight: 300;
   font-size: 24px;
   line-height: 33px;
   text-align: center;
   color: #Ffffff;
+  margin: 0;
 }
 
 .contest__header__wrapper {
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  width: 320px;
+  padding: 30px 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .contest__description {
-  width: 280px;
-  margin: 54px auto;
+  width: 100%;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
   text-align: center;
+  margin: 0;
+}
+
+.contest__description__wrapper {
+  margin: 0 auto;
+  width: 320px;
+  padding: 54px 20px;
+  box-sizing: border-box;
+}
+
+.contest__description_extra {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .contest__header__wrapper {
+    width: 660px;
+    padding: 30px 20px;
+  }
+
+  .contest__header {
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
+
+  .contest__header__text {
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .contest__description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;  
+  }
+
+  .contest__description__wrapper {
+    width: 660px;
+    padding: 30px 85px;
+    box-sizing: border-box;
+  }
+
+  .contest__description_extra {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contest__header__wrapper {
+    width: 1200px;
+    padding: 70px 130px;
+  }
+
+  .contest__header {
+    background-image: url("../../img/bg-back-desktop@1x.jpg");
+  }
+
+  .contest__description__wrapper {
+    width: 1200px;
+    padding: 100px 222px;
+    box-sizing: border-box;
+  }
 }
