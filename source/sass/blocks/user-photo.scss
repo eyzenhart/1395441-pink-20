@@ -91,6 +91,10 @@
 .user-photo__indent {
   margin: 0 auto;
   padding: 25px 20px;
+<<<<<<< HEAD
+=======
+  box-sizing: border-box;
+>>>>>>> module4-task1
 }
 
 .user-photo__like {
@@ -218,6 +222,16 @@
     background-repeat: no-repeat;
   }
 
+<<<<<<< HEAD
+=======
+  .user-photo__wrapper {
+    width: 1200px;
+    padding: 50px 130px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+>>>>>>> module4-task1
   .user-photo__description {
     width: 572px;
   }

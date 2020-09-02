@@ -1,5 +1,5 @@
 .app {
-  width: 320px;
+  width: 100%;
   box-sizing: border-box;
   padding: 0;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -7,21 +7,27 @@
 }
 
 .app__more {
-  background-color: #1D2631;
   width: 320px;
   padding: 0 20px;
   padding-top: 28px;
   padding-bottom: 38px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 20;
+}
+
+.app__header {
+  position: relative;
+  z-index: 20;
 }
 
 .app__slogan {
   margin: 0;
-  padding: 20px;
   font-weight: 300;
   font-size: 24px;
   line-height: 120%;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .app__button {
@@ -111,13 +117,14 @@
     position: absolute;
     right: 20px;
     bottom: 0;
-    z-index: 1;
+    z-index: 10;
   }
 
   .app__more {
     width: 300px;
     background-color: none;
-    z-index: 2;
+    position: relative;
+    z-index: 20;
   }
 
   .app__slogan {
