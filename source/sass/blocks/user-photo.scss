@@ -4,7 +4,7 @@
 
 .user-photo__wrapper {
   width: 320px;
-  padding: 25px 20px;
+  padding: 19px 20px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -16,8 +16,8 @@
 
 .user-photo__header__wrapper {
   padding: 0 20px;
-  padding-top: 36px;
-  padding-bottom: 84px;
+  padding-top: 22px;
+  padding-bottom: 80px;
 }
 
 .user-photo__header-text {
@@ -32,12 +32,13 @@
 
 .user-photo__description {
   margin: 0 auto;
+  margin-top: 2px;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  padding-top: 54px;
-  padding-bottom: 60px;
+  padding-top: 43px;
+  padding-bottom: 30px;
 }
 
 .user-photo__list {
@@ -57,7 +58,7 @@
 }
 
 .user-photo__item:not(:last-of-type) {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .user-photo__user-name {
@@ -65,6 +66,7 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+  text-align: center;
 }
 
 .user-photo__name-n-time-wrapper {
@@ -90,11 +92,8 @@
 
 .user-photo__indent {
   margin: 0 auto;
-  padding: 25px 20px;
-<<<<<<< HEAD
-=======
+  padding: 14px 17px;
   box-sizing: border-box;
->>>>>>> module4-task1
 }
 
 .user-photo__like {
@@ -104,6 +103,7 @@
   line-height: 24px;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 12px;
 }
 
 .user-photo__winner {
@@ -212,8 +212,8 @@
 @media (min-width: 1200px) {
   .user-photo__header__wrapper {
     padding: 0 130px;
-    padding-top: 74px;
-    padding-bottom: 104px;
+    padding-top: 64px;
+    padding-bottom: 84px;
   }
 
   .user-photo__header {
@@ -222,8 +222,6 @@
     background-repeat: no-repeat;
   }
 
-<<<<<<< HEAD
-=======
   .user-photo__wrapper {
     width: 1200px;
     padding: 50px 130px;
@@ -231,9 +229,10 @@
     box-sizing: border-box;
   }
 
->>>>>>> module4-task1
   .user-photo__description {
     width: 572px;
+    padding-top: 90px;
+    padding-bottom: 87px;
   }
 
   .user-photo__winner__wrapper {
@@ -246,5 +245,14 @@
     background-repeat: no-repeat;
     width: 100%;
     height: 506px;
+  }
+
+  .user-photo__item:last-of-type {
+    margin-bottom: 23px;
+  }
+
+  .user-photo__description_bottom {
+    padding-top: 35px;
+    padding-bottom: 20px;
   }
 }

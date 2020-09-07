@@ -1,9 +1,9 @@
 var menuLink = document.querySelector(".main-nav__toggle");
 var menuPopup = document.querySelector(".main-nav__popup");
-var menuClose = document.querySelector(".main-nav__toggle_close");
 var menuWrapper = document.querySelector(".page-header__wrapper");
 
-menuClose.addEventListener("click", function (evt) {
+
+menuLink.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (menuLink.classList.contains("main-nav__toggle_open")) {
     menuLink.classList.remove("main-nav__toggle_open");

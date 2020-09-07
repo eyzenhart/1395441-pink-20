@@ -10,7 +10,7 @@
   width: 320px;
   padding: 0 20px;
   padding-top: 28px;
-  padding-bottom: 38px;
+  padding-bottom: 30px;
   box-sizing: border-box;
   position: relative;
   z-index: 20;
@@ -50,7 +50,8 @@
   width: 204px;
   list-style: none;
   padding: 0;
-  margin: 32px auto;
+  margin: 0 auto;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -62,12 +63,14 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0 auto;
+  margin-top: 15px;
   text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 659px) {
   .app__header {
     padding: 20px;
+    padding-top: 29px;
   }
 
   .app__more {
@@ -81,6 +84,7 @@
     width: 320px;
     height: 286px;
     margin: 0 auto;
+    margin-top: 8px;
   }
 
   .app__slogan {
@@ -124,20 +128,32 @@
     width: 300px;
     background-color: none;
     position: relative;
+    padding-left: 0;
+    padding-bottom: 110px;
     z-index: 20;
   }
 
+  .app__list {
+    margin-top: 42px;
+    margin-bottom: 30px;
+    padding-left: 12px;
+  }
+
   .app__slogan {
-    width: 300px;
+    width: 230px;
     min-height: 127px;
-    margin-top: 102px;
+    margin-top: 98px;
+    margin-left: 35px;
     font-weight: 300;
     font-size: 40px;
     line-height: 120%;
     box-sizing: border-box;
+    text-align: center;
   }
 
   .app__description {
+    width: 300px;
+    text-align: center;
     font-weight: 300px;
     font-size: 18px;
     line-height: 24px;
@@ -159,8 +175,7 @@
   }
 
   .app__wrapper {
-    width: 1150px;
-    margin: 0 auto;
+    width: 1200px;
     box-sizing: border-box;
     padding: 0 130px;
     padding-top: 98px;
@@ -179,5 +194,36 @@
 
   .app__more {
     background-color: none;
+    width: 300px;
+    padding-top: 35px;
+    padding-bottom: 120px;
+  }
+
+  .app__header {
+    padding-left: 30px;
+  }
+
+  .app__slogan {
+    margin-top: 0;
+    margin-left: 0;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .app__button {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 18px;
+    padding: 15px 26px;
+  }
+
+  .app__list {
+    margin-top: 70px;
+    margin-bottom: 48px;
+  }
+
+  .app__description {
+    margin-top: 0;
   }
 }

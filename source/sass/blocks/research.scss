@@ -8,11 +8,13 @@
   line-height: 36px;
   width: 168px;
   margin: 0;
+  margin-bottom: 13px;
+  padding-top: 20px;
 }
 
 .research__img {
-  opacity: 0.1;
   display: block;
+  padding-top: 10px;
 }
 
 .research__text {
@@ -21,6 +23,9 @@
   line-height: 24px;
   width: 310px;
   padding: 0;
+  margin: 0;
+  text-align: start;
+  margin-bottom: 10px;
 }
 
 .research__link {
@@ -28,6 +33,7 @@
   font-size: 14px;
   line-height: 24px;
   color: #D22856;
+  display: block;
 }
 
 .research__text__wrapper {
@@ -42,7 +48,8 @@
 
   .research__wrapper {
     width: 620px;
-    padding: 50px 20px;
+    padding: 54px 20px;
+    padding-bottom: 50px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -52,27 +59,60 @@
   .research__text__wrapper {
     width: 310px;
     margin: 0;
+    align-self: center;
   }
+
+
 }
 
 @media (min-width: 1200px) {
   .research {
     background-color: #F2F2F2;
+    display: block;
+  }
+
+  .research__wrapper {
+    width: 1200px;
+    box-sizing: border-box;
+    padding: 30px 150px;
+    padding-right: 185px;
+    padding-bottom: 55px;
+    display: flex;
+    flex-direction: row;
   }
 
   .research__header {
     width: 100%;
     line-height: 30px;
+    margin-bottom: 25px;
+    padding-top: 0;
+  }
+
+  .research__text__wrapper {
+    width: 534px;
+    padding-top: 30px;
   }
 
   .research__text {
-    width: 534px;
+    width: 100%;
     font-size: 18px;
     line-height: 30px; 
+    margin-bottom: 30px;
   }
 
   .research__link {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .research__enter {
+    display: none;
+  }
+
+  .research__img {
+    width: 298px;
+    height: 345px;
+    margin-right: 71px;
+    padding-top: 0;
   }
 }

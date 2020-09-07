@@ -15,7 +15,8 @@
 
 .contest__header__wrapper {
   width: 320px;
-  padding: 30px 20px;
+  padding: 28px 20px;
+  padding-bottom: 40px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -33,7 +34,8 @@
 .contest__description__wrapper {
   margin: 0 auto;
   width: 320px;
-  padding: 54px 20px;
+  padding: 48px 20px;
+  padding-bottom: 35px;
   box-sizing: border-box;
 }
 
@@ -44,7 +46,8 @@
 @media (min-width: 660px) {
   .contest__header__wrapper {
     width: 660px;
-    padding: 30px 20px;
+    padding: 70px 20px;
+    padding-bottom: 58px;
   }
 
   .contest__header {
@@ -65,7 +68,8 @@
 
   .contest__description__wrapper {
     width: 660px;
-    padding: 30px 85px;
+    padding: 90px 85px;
+    padding-bottom: 50px;
     box-sizing: border-box;
   }
 
@@ -77,7 +81,8 @@
 @media (min-width: 1200px) {
   .contest__header__wrapper {
     width: 1200px;
-    padding: 70px 130px;
+    padding: 60px 130px;
+    padding-bottom: 85px;
   }
 
   .contest__header {
@@ -86,7 +91,8 @@
 
   .contest__description__wrapper {
     width: 1200px;
-    padding: 100px 222px;
+    padding: 95px 222px;
+    padding-bottom: 65px;
     box-sizing: border-box;
   }
 }
