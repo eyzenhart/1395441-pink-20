@@ -5,6 +5,7 @@
 
 .editor__wrapper {
   padding: 20px;
+  padding-bottom: 40px;
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
@@ -42,9 +43,9 @@
 }
 
 .editor__filter-list {
-  width: 235px;
+  width: 194px;
   list-style: none;
-  padding: 42px 20px;
+  padding: 32px 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -62,6 +63,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin-top: 73px;
 }
 
 .editor__button {
@@ -78,6 +80,10 @@
   border: 3px solid #D22856;
   box-sizing: border-box;
   border-radius: 30px;
+}
+
+.editor__button:not(:last-of-type) {
+  margin-bottom: 12px;
 }
 
 .editor__range-controls {
@@ -209,13 +215,20 @@
     margin: 0;
   }
 
+  .editor {
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
   .editor__wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1200px;
-    padding: 55px 130px;
+    width: 940px;
+    padding: 55px 80px;
+    padding-right: 60px;
     box-sizing: border-box;
   }
 
@@ -233,4 +246,11 @@
     margin: 0;
   }
 
+  .editor__filter-item {
+    padding-top: 0;
+  }
+
+  .editor__button:first-of-type {
+    margin: 0;
+  }
 }

@@ -1,5 +1,14 @@
+.form {
+  margin-bottom: 20px;
+}
+
 .contest__form {
   border: 0;
+  box-sizing: border-box;
+}
+
+.contest__hidden-text {
+  display: none;
 }
 
 .contest__fieldset {
@@ -7,30 +16,51 @@
   flex-direction: column;
   border: none;
   flex-wrap: wrap;
-  margin: 0;
   padding: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .contest__fieldset_special {
   border: 0;
 }
 
-.contest__fieldset:not(:last-of-type) {
-  margin-bottom: 44px;
-}
-
 .contest__personal {
   width: 320px;
-  padding: 0 20px;
+  padding: 20px;
+  padding-bottom: 23px;
+  padding-top: 0;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+.contest__personal__wrapper {
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .contest__contacts {
   width: 320px;
-  padding: 0 20px;
+  padding: 32px 20px;
+  padding-bottom: 26px;
   box-sizing: border-box;
   margin: 0 auto;
+}
+
+.contest__feedback {
+  width: 320px;
+  padding: 48px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.contest__feedback__wrapper {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.feedback__legend {
+  margin-bottom: 16px;
 }
 
 .contest__text {
@@ -39,6 +69,7 @@
   font-size: 18px;
   line-height: 30px;
   padding: 14px 20px;
+  margin-top: 3px;
   box-sizing: border-box;
 }
 
@@ -47,12 +78,16 @@
   background-color: #F2F2F2;
 }
 
-.achievement__item:not(:first-of-type) {
-  margin-top: 65px;
+.app__legend {
+  margin-bottom: 35px;
+}
+
+.achievement__item:not(:last-of-type) {
+  margin-bottom: 52px;
 }
 
 .personal__item:not(:last-of-type) {
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 }
 
 .contacts__legend {
@@ -61,7 +96,8 @@
 
 .contest__legend {
   width: 218px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -76,8 +112,12 @@
   line-height: 30px;
 }
 
-.contest-app__item:not(:first-of-type) {
-  margin-top: 62px;
+// .contest__legend {
+//   margin-bottom: 44px;
+// }
+
+.contest__app__item:not(:last-of-type) {
+  margin-bottom: 45px;
 }
 
 .contest__label {
@@ -87,16 +127,23 @@
   color: #D22856;
   text-transform: uppercase;
   display: block;
-  margin-bottom: 29px;
+  margin-bottom: 20px;
 }
 
-.contest_textarea {
+.contest__label span {
+  padding-left: 23px;
+}
+
+.contest__textarea {
   width: 276px;
-  margin: 0 auto;
+  margin: 0;
   font-weight: normal;
   font-size: 18px;
   line-height: 30px;
   box-sizing: border-box;
+  padding-top: 13px;
+  padding-left: 18px;
+  padding-right: 6px;
 }
 
 .contest__extra {
@@ -124,6 +171,8 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 36px;
 }
 
 .contest__special {
@@ -139,8 +188,15 @@
   box-sizing: border-box;
 }
 
+.contest__app__item span {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .contest__achievement {
   padding: 40px 20px;
+  padding-bottom: 45px;
 }
 
 .contest__achievement__wrapper {
@@ -148,12 +204,28 @@
   box-sizing: border-box;
 }
 
+.achievement__legend {
+  margin-bottom: 44px;
+}
+
 
 @media (min-width: 660px) {
+  .form {
+    margin-bottom: 50px;
+  }
+
   .contest__personal {
     width: 660px;
-    padding: 0 20px;
-    order: -2;
+    padding: 20px 20px;
+    padding-bottom: 40px;
+  }
+
+  .contest__personal__wrapper {
+    order: -3;
+  }
+
+  .personal__item:not(:last-of-type) {
+    margin-bottom: 50px;
   }
 
   .contest__contacts {
@@ -161,17 +233,24 @@
     padding: 40px 20px;
     box-sizing: border-box;
     margin: 0;
+    margin-bottom: 60px;
   }
 
   .contest__contacts__wrapper {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
+    order: -1;
   }
 
   .contest__fieldset {
     border: 2px solid #E5E5E5;
     border-radius: 1px;
+  }
+
+  .contest__legend {
+    width: 318px;
+    margin-bottom: 0;
   }
 
   .contest__achievement,
@@ -184,6 +263,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .personal__item span {
+    margin-right: 20px;
+    padding: 0;
   }
 
   .contest__text {
@@ -198,43 +283,33 @@
   }
 
   .contest__app {
-    padding: 54px 82px;
+    padding: 46px 82px;
+    padding-bottom: 56px;
+    box-sizing: border-box;
   }
 
   .contest__app__wrapper {
     width: 100%;
     padding: 0 20px;
+    margin-bottom: 60px;
     box-sizing: border-box;
-    order: -1;
+    order: -2;
   }
 
   .contest__achievement {
-    padding: 54px 82px;
+    padding: 48px 82px;
   }
 
   .contest__achievement__wrapper {
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
-  }
-
-  .contest__feedback {
-    padding: 54px 62px;
-  }
-
-  .contest__feedback__wrapper {
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  .contest_textarea {
-    width: 100%;
-    padding: 0 20px;
+    margin-bottom: 65px;
   }
 
   .contacts__legend {
     display: block;
+    width: 198px;
   }
 
   .contacts__item {
@@ -249,29 +324,78 @@
   .contest__extra {
     width: 620px;
     margin: 0 auto;
-    margin-top: 69px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .contest__extra-info {
+    margin-top: 0;
+  }
+
+  .achievement__legend {
+    width: 374px;
+  }
+
+  .contest__feedback {
+    width: 100%;
+    padding: 35px 62px;
+    padding-bottom: 45px;
+    margin-bottom: 65px;
+  }
+
+  .contest__feedback__wrapper {
+    width: 660px;
+    padding: 0 20px;
+  }
+
+  .contest__textarea {
+    width: 100%;
+  }
+
+  .contest__button {
+    padding-left: 55px;
+    padding-right: 55px;
   }
 }
 
 @media (min-width: 1200px) {
+  .form {
+    margin-bottom: 0;
+  }
+  
   .contest__form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
     padding: 0 130px;
+    box-sizing: border-box;
   }
 
   .contest__personal {
-    width: 50%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .contest__personal__wrapper {
+    width: 433px;
+    margin-right: 74px;
+    padding-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .contest__app {
+    width: 100%;
+    padding: 55px 55px;
   }
 
   .contest__app__wrapper {
-    width: 50%;
+    width: 433px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 60px;
   }
 
   .contest__achievement {
@@ -281,6 +405,11 @@
     justify-content: space-between;
   }
 
+  .contest__achievement__wrapper {
+    padding: 0;
+    margin-bottom: 60px;
+  }
+
   .achievement__item {
     width: 260px;
   }
@@ -288,19 +417,49 @@
   .contest__contacts {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    padding: 44px 50px;
+  }
+
+  .contest__contacts__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contest__feedback__wrapper {
+    width: 100%;
+    padding: 0;
+  }
+
+  .feedback__legend {
+    width: 260px;
   }
 
   .contacts__item {
-    width: 50%;
+    width: 371px;
+    margin: 0;
   }
 
   .contest__extra {
-    width: 900px;
+    width: 940px;
     margin: 0 auto;
-    margin-top: 69px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .contest__text {
+    width: 100%;
+  }
+
+  .contest__textarea {
+    min-height: 124px;
+  }
+
+  .contest__hidden-text {
+    display: block;
+  }
+
+  .personal__item:last-of-type {
+    margin-bottom: 0;
   }
 }
