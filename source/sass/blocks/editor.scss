@@ -13,12 +13,9 @@
 
 .editor__img {
   padding: 0;
-  margin: 0;
-}
-
-.editor__img_tablet,
-.editor__img_desktop {
-  display: none;
+  margin: 0 auto;
+  width: 280px;
+  height: 374px;  
 }
 
 .editor__crop__range-controls,
@@ -54,10 +51,6 @@
   align-items: center;
 }
 
-// .editor__filter-item:not(:last-of-type) {
-//   margin-right: 35px;
-// }
-
 .editor__buttons {
   display: flex;
   flex-direction: column;
@@ -80,6 +73,11 @@
   border: 3px solid #D22856;
   box-sizing: border-box;
   border-radius: 30px;
+}
+
+.editor__cancel-button {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .editor__button:not(:last-of-type) {
@@ -120,16 +118,21 @@
 }
 
 @media (min-width: 660px) {
-  .editor__img,
   .editor__range-controls_general,
   .editor__crop__svg,
   .editor__fill__svg,
   .editor__color__svg {
     display: none;
   }
-  
-  .editor__img_tablet {
-    display: block;
+
+  .editor__img {
+    width: 300px;
+    height: 400px;
+    margin: 0;
+  }
+
+  .editor__buttons {
+    margin-top: 0;
   }
 
   .editor__crop__range-controls,
@@ -148,6 +151,7 @@
     width: 275px;
     padding: 0;
     margin: 0;
+    flex-direction: column;
   }
 
   .editor__filter-item {
@@ -156,10 +160,24 @@
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
+    padding-bottom: 20px;
     padding-right: 18px;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
+
+  // .editor__range-controls {
+  //   position: relative;
+  //   height: 100%;
+  //   top: 50%;
+  // }
+
+  // .editor__scale {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 0;
+  //   padding: 0;
+  // }
 
   .editor__wrapper {
     display: flex;
@@ -181,8 +199,6 @@
 }
 
 @media (min-width: 1200px) {
-  .editor__img,
-  .editor__img_tablet,
   .editor__range-controls_general,
   .editor__crop__svg,
   .editor__fill__svg,
@@ -191,10 +207,6 @@
   .editor__fill__svg_tablet,
   .editor__color__svg_tablet {
     display: none;
-  }
-  
-  .editor__img_desktop {
-    display: block;
   }
 
   .editor__crop__range-controls,
@@ -209,10 +221,36 @@
     display: block;
   }
 
+  .editor__img {
+    width: 300px;
+    height: 400px;
+  }
+
   .editor__filter-list {
     width: 410px;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .editor__filter-item {
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 0;
+  }
+
+  .editor__range-controls {
+    position: relative;
+    height: 100%;
+    top: 50%;
+  }
+
+  .editor__scale {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 0;
   }
 
   .editor {
