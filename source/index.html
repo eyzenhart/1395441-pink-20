@@ -51,7 +51,11 @@
                 Взгляните на жизнь иначе!
               </p>
             </div>
-            <div class="app__img"></div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x 1200w">
+              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x 660w">
+              <img src="img/iphone-hand-mobile@1x.png" class="app__img" alt="Демонстрация приложения на телефоне" width="280" height="286">
+            </picture>
             <div class="app__more">
               <div class="app__more_wrapper">
                 <a class="app__button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
@@ -108,7 +112,10 @@
           <div class="advantages__wrapper">
             <ul class="advantages__list">
               <li class="advantages__item">
-                <img class="advantages__item__img" src="img/iphone-screen-1-desktop@1x.png" width="186" height="382"> 
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/iphone-screen-1-desktop@2x.png 2x">
+                  <img class="advantages__item__img" src="img/iphone-screen-1-desktop@1x.png" alt="Демонстрация работы приложения" width="186" height="382"> 
+                </picture>
                 <h3 class="advantages__item__header">
                   Поднимает настроение
                 </h3>
@@ -117,7 +124,10 @@
                 </p>
               </li>
               <li class="advantages__item">
-                <img class="advantages__item__img" src="img/iphone-screen-2-desktop@1x.png" width="186" height="382"> 
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/iphone-screen-2-desktop@2x.png 2x">
+                  <img class="advantages__item__img" src="img/iphone-screen-2-desktop@1x.png" alt="Демонстрация работы приложения" width="186" height="382">
+                </picture>
                 <h3 class="advantages__item__header">
                   Меняет мир вокруг
                 </h3>
@@ -126,7 +136,10 @@
                 </p>
               </li>
               <li class="advantages__item">
-                <img class="advantages__item__img" src="img/iphone-screen-3-desktop@1x.png" width="186" height="382"> 
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@2x.png 2x">
+                  <img class="advantages__item__img" src="img/iphone-screen-3-desktop@1x.png" alt="Демонстрация работы приложения" width="186" height="382"> 
+                </picture>
                 <h3 class="advantages__item__header">
                   Заводит новых друзей
                 </h3>
@@ -135,14 +148,18 @@
                 </p>
               </li>
             </ul>
-            <div class="advantages__img"></div>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/iphone-screen-mobile@2x.png 1x, img/iphone-screen-mobile@2x.png 2x 1200w">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-mobile@2x.png 1x, img/iphone-screen-mobile@2x.png 2x 660w">
+              <img class="advantages__img" src="img/iphone-screen-mobile@1x.png" alt="Скриншот приложения" width="157" height="320">
+            </picture>
           </div>
         </section>
 
 
         <section class="research">
           <div class="research__wrapper">
-            <img class="research__img" src="img/icon-timer-new.svg" width="238" height="276">
+            <img class="research__img" src="img/icon-timer-new.svg" alt="Иконка таймера" width="238" height="276">
             <div class="research__text__wrapper">  
               <h2 class="research__header">Эффект<br class="research__enter"> на 24 часа!</h2>
               <p class="research__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
@@ -157,9 +174,9 @@
             <h2 class="visually-hidden">
                 Отзывы
             </h2>
-            <img class="review__arrow review__turn-left" src="img/icon-review-arrow-left.svg" width="22" height="41">
+            <img class="review__arrow review__turn-left" src="img/icon-review-arrow-left.svg" alt="Стрелка влево" width="22" height="41">
             <div class="review__content__wrapper">
-              <img class="review__icon" src="img/icon-quotes.svg" width="79" height="63">
+              <img class="review__icon" src="img/icon-quotes.svg" alt="Кавычки при цитировании" width="79" height="63">
               <blockquote class="review__item">
                 <cite class="review__author-name">
                   Николай Петров<br><span class="review__autor-name__info">25 лет, водитель трамвая</span>
@@ -173,7 +190,7 @@
                 <button class="review__button" type="button"></button>
               </div>
             </div>
-            <img class="review__arrow review__turn-right" src="img/icon-review-arrow-right.svg" width="22" height="41">
+            <img class="review__arrow review__turn-right" src="img/icon-review-arrow-right.svg" alt="Стрелка вправо" width="22" height="41">
           </div>
         </section>
 
@@ -280,7 +297,12 @@
         </section>
 
         <section class="map">
-          <!-- <img class="map__img" src="img/bg-map-mobile@1x.png" alt="Офис по адресу ул. Большая Конюшенная, 19/8" width="320" height="645"> -->
+          <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1599720195817!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x 1200w">
+            <source media="(min-width:660px)" srcset="img/bg-map-tablet@1x 1x.jpg, img/bg-map-tablet@2x.jpg 2x 660w">
+            <img class="map__img" src="img/bg-map-mobile@1x.png" alt="Офис по адресу ул. Большая Конюшенная, 19/8" width="320" height="645">
+          </picture>
         </section>
 
       </main>
