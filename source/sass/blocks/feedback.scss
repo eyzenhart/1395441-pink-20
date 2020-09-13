@@ -47,6 +47,15 @@
   line-height: 33px;
 }
 
+.feedback__link:hover,
+.feedback__link:focus {
+  color: #283645;
+}
+
+.feedback__link:active {
+  opacity: 0.3;
+}
+
 @media (min-width: 660px) {
   .feedback__header {
     font-weight: 300;

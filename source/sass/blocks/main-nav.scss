@@ -17,16 +17,38 @@
   display: block;
 }
 
+.main-nav__toggle_open:hover,
+.main-nav__toggle_open:focus {
+  background-image: url(../img/icon-menu-burger-hover.svg);
+  background-repeat: no-repeat;
+}
+
+.main-nav__toggle_open:active {
+  opacity: 0.3;
+}
+
 .main-nav__toggle_close {
   width: 23px;
   height: 23px;
   background-color: #1D2631;
   background-image: url(../../img/icon-menu-cross.svg);
   background-repeat: no-repeat;
+  background-color: #283645;
   outline: none;
   border: none;
   cursor: pointer;
   display: block;
+}
+
+.main-nav__toggle_close:hover,
+.main-nav__toggle_close:focus {
+  background-image: url(../img/icon-menu-cross-hover.svg);
+  background-repeat: no-repeat;
+  background-color: #283645;
+}
+
+.main-nav__toggle_close:active {
+  opacity: 0.3;
 }
 
 .main-nav__list {
@@ -61,6 +83,12 @@
   text-align: center;
 }
 
+.main-nav__link:hover,
+.main-nav__link:focus {
+  color: #D22856;
+  outline: none;
+}
+
 .main-nav_hidden {
   display: none;
 }
@@ -75,6 +103,10 @@
     text-decoration: none;
     background-color: #283645;
     box-shadow: 0px 1px 0px #000000, inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+  }
+
+  .main-nav__link:active {
+    opacity: 0.3;
   }
 
   .main-nav__toggle {
@@ -118,6 +150,11 @@
     background-color: none;
     box-shadow: none;
     text-transform: none;
+  }
+
+  .main-nav__link:active {
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
   }
 }
 

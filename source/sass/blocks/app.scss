@@ -47,6 +47,16 @@
   margin: 0 auto;
 }
 
+.app__button:hover,
+.app__button:focus {
+  background-color: #FFFFFF;
+  color: #D22856;
+}
+
+.app__button:active {
+  color: rgba(210, 40, 86, .3);
+}
+
 .app__list {
   width: 204px;
   list-style: none;

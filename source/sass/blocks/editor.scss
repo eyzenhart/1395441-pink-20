@@ -24,21 +24,6 @@
   display: none;
 }
 
-.editor__crop__svg_tablet,
-.editor__crop__svg_desktop {
-  display: none;
-}
-
-.editor__fill__svg_tablet,
-.editor__fill__svg_desktop {
-  display: none;
-}
-
-.editor__color__svg_tablet,
-.editor__color__svg_desktop {
-  display: none;
-}
-
 .editor__filter-list {
   width: 194px;
   list-style: none;
@@ -73,12 +58,44 @@
   border: 3px solid #D22856;
   box-sizing: border-box;
   border-radius: 30px;
+  outline: none;
+}
+
+.editor__post-button:hover,
+.editor__post-button:focus {
+  background-color: #D22856;
+  color: #FFFFFF;
+
+}
+
+.editor__post-button:active span {
+  color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .editor__cancel-button {
   border: 3px solid rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.1);
 }
+
+.editor__cancel-button:hover,
+.editor__cancel-button:focus {
+  border: 3px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.editor__cancel-button:active {
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  background-color: #283645;
+  opacity: 0.3;
+}
+
+.editor__cancel-button:active span {
+  color: #FFFFFF;
+  opacity: 0.3;
+}
+
+
 
 .editor__button:not(:last-of-type) {
   margin-bottom: 12px;
@@ -117,11 +134,80 @@
   margin-bottom: 38px;
 }
 
+.editor__crop__button {
+  width: 44px;
+  height: 44px;
+  outline: none;
+  border: none;
+}
+
+.editor__fill__button {
+  width: 48px;
+  height: 43px;
+  outline: none;
+  border: none;
+}
+
+.editor__color__button {
+  width: 32px;
+  height: 32px;
+  outline: none;
+  border: none;
+}
+
+
+@media(min-width: 320px) and (max-width:659px) {
+  .editor__filter__button:hover,
+  .editor__filter__button:focus {
+    opacity: 0.5;
+  }
+
+  .editor__crop__button {
+    background-image: url(../../img/icon-editor-crop-disabled.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+  
+  .editor__crop__button:active {
+    background-image: url(../../img/icon-editor-crop-active.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+  
+  .editor__fill__button {
+    background-image: url(../../img/icon-editor-fill-disabled.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+
+  .editor__fill__button:active {
+    background-image: url(../../img/icon-editor-fill-active.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+  
+  .editor__color__button {
+    background-image: url(../../img/icon-editor-contrast-disabled.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+  }
+
+  .editor__color__button:active {
+    background-image: url(../../img/icon-editor-contrast-active.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+}
+
+
 @media (min-width: 660px) {
-  .editor__range-controls_general,
-  .editor__crop__svg,
-  .editor__fill__svg,
-  .editor__color__svg {
+  .editor__range-controls_general {
     display: none;
   }
 
@@ -141,10 +227,28 @@
     display: block;
   }
 
-  .editor__crop__svg_tablet,
-  .editor__fill__svg_tablet,
-  .editor__color__svg_tablet {
-    display: block;
+  .editor__crop__button {
+    background-image: url(../../img/icon-editor-crop-tablet.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    opacity: 1;
+  }
+
+  .editor__fill__button {
+    background-image: url(../../img/icon-editor-fill.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 24px 22px;
+    opacity: 1;
+  }
+
+  .editor__color__button {
+    background-image: url(../../img/icon-editor-contrast.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    opacity: 1;
   }
 
   .editor__filter-list {
@@ -199,13 +303,7 @@
 }
 
 @media (min-width: 1200px) {
-  .editor__range-controls_general,
-  .editor__crop__svg,
-  .editor__fill__svg,
-  .editor__color__svg,
-  .editor__crop__svg_tablet,
-  .editor__fill__svg_tablet,
-  .editor__color__svg_tablet {
+  .editor__range-controls_general {
     display: none;
   }
 
@@ -215,10 +313,25 @@
     display: block;
   }
 
-  .editor__crop__svg_desktop,
-  .editor__fill__svg_desktop,
-  .editor__color__svg_desktop {
-    display: block;
+  .editor__crop__button {
+    background-image: url(../../img/icon-editor-crop-desktop.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 44px 44px;
+  }
+
+  .editor__fill__button {
+    background-image: url(../../img/icon-editor-fill-desktop.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 48px 43px;
+  }
+
+  .editor__color__button {
+    background-image: url(../../img/icon-editor-contrast-desktop.svg);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
   }
 
   .editor__img {

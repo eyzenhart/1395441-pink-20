@@ -76,30 +76,30 @@
               <legend class="achievement__legend contest__legend">
                 Ваши безбашенные достижения в путешествии
               </legend>
-              <label class="achievement__item">
-                <input class="contest__checkbox" type="checkbox" name="shark-selfie" checked>
-                Сделал селфи с акулой
-              </label>
-              <label class="achievement__item">
-                <input class="contest__checkbox" type="checkbox" name="burned" checked>
-                Обгорел на пляже
-              </label>
-              <label class="achievement__item">
-                <input class="contest__checkbox" type="checkbox" name="chuck-norris">
+                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_1" name="shark-selfie" checked>
+                <label for="contest__checkbox_1" class="achievement__item">
+                  Сделал селфи с акулой
+                </label>
+                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_2" name="burned" checked>
+                <label for="contest__checkbox_2" class="achievement__item">
+                  Обгорел на пляже
+                </label>
+                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_3" name="chuck-norris">
+                <label for="contest__checkbox_3" class="achievement__item">
                 Видел Чака Норриса
-              </label>
-              <label class="achievement__item">
-                <input class="contest__checkbox" type="checkbox" name="souvenirs">
-                Накупил сувениров
-              </label>
-              <label class="achievement__item">
-                <input class="contest__checkbox" type="checkbox" name="tower" checked>
-                Удержал башню
-              </label>
-              <label class="achievement__item">
-                <input class="contest__checkbox" type="checkbox" name="hotel" checked>
-                Разгромил отель
-              </label>
+                </label>
+                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_4" name="souvenirs">
+                <label for="contest__checkbox_4" class="achievement__item">
+                  Накупил сувениров
+                </label>
+                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_5" name="tower" checked>
+                <label for="contest__checkbox_5" class="achievement__item">
+                  Удержал башню
+                </label>
+                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_6" name="hotel" checked>
+                <label for="contest__checkbox_6" class="achievement__item">
+                  Разгромил отель
+                </label>
             </fieldset>
           </div>
 
@@ -124,18 +124,18 @@
               <legend class="app__legend contest__legend">
                 С каким приложением путешествовали?
               </legend>
-              <label class="contest__app__item">
-                <input class="contest__radio" type="radio" name="contest-radio" checked>
-                <span>Pink для iOS</span>
-              </label>
-              <label class="contest__app__item">
-                <input class="contest__radio" type="radio" name="contest-radio">
-                <span>Pink на Android</span>
-              </label>
-              <label class="contest__app__item">
-                <input class="contest__radio" type="radio" name="contest-radio">
-                <span>Windows Phone</span>
-              </label>
+                <input class="contest__radio" type="radio" id="contest__radio_1" name="contest-radio" checked>
+                <label for="contest__radio_1" class="contest__app__item">
+                  <span>Pink для iOS</span>
+                </label>
+                <input class="contest__radio" type="radio" id="contest__radio_2" name="contest-radio">
+                <label for="contest__radio_2" class="contest__app__item">
+                  <span>Pink на Android</span>
+                </label>
+                <input class="contest__radio" type="radio" id="contest__radio_3" name="contest-radio">
+                <label for="contest__radio_3" class="contest__app__item">
+                  <span>Windows Phone</span>
+                </label>
             </fieldset>
           </div>
 
@@ -152,7 +152,7 @@
           </div>
 
           <div class="contest__extra">
-            <button class="contest__button" type="submit">Отправить форму</button>
+            <button class="contest__button" type="submit"><span>Отправить форму</span></button>
             <p class="contest__extra-info"><span class="contest__special">*</span> — обязательные <span class="contest__hidden-text">для заполнения</span> поля</p>
           </div>
         </form>
@@ -200,6 +200,37 @@
         </div>
       </div>
     </footer>
+
+    <section class="window-error visually-hidden">
+      <div class="window-error__wrapper">
+        <p class="window-error__header">
+          Что-то пошло не так!
+        </p>
+        <p class="window-error__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button type="button" class="window-error__button">
+          <span>ОК</span>
+        </button>
+      </div>
+    </section>
+
+
+    <section class="window-success visually-hidden">
+      <div class="window-success__header__wrapper">
+        <p class="window-success__header">
+          Ваша заявка отправлена
+        </p>
+        <p class="window-success__text">
+          Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+        </p>
+      </div>
+        <div class="window-success__button__wrapper">
+          <button type="button" class="window-success__button">
+            <span>ЗАКРЫТЬ ОКНО</span>
+          </button>
+        </div>
+    </section>
 
 
     <script src="js/menu.js"></script>
