@@ -1,6 +1,10 @@
 .plan {
   width: 100%;
   background-color: #F2F2F2;
+  overflow: hidden;
+}
+
+.plan__wrapper {
   padding-top: 100px;
   padding-bottom: 49px;
 }
@@ -9,6 +13,7 @@
   width: 832px;
   overflow: hidden;
   margin: 0 auto;
+  margin-left: -260px;
 }
 
 .plan__table_tablet {
@@ -21,6 +26,7 @@
   color: #ffffff;
   text-transform: uppercase;
   border: 2px solid #283645;
+  border-right: 2px solid #F2F2F2;
   border-radius: 1px 0px 0px 0px;
 }
 
@@ -43,7 +49,7 @@
 }
 
 .plan__buttons {
-  width: 100px;
+  width: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -51,7 +57,41 @@
   margin-top: 45px;
 }
 
+.plan__button {
+  width: 2px;
+  height: 2px;
+  background-color: #283645;
+  opacity: 0.3;
+  border: none;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.plan__button:hover,
+.plan__button:focus {
+  opacity: 0.6;
+}
+
+.plan__button:active {
+  opacity: 0.1;
+}
+
+.plan__button_current {
+  width: 2px;
+  height: 2px;
+  padding: 3px;
+  border: 3px solid #283645;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 1;
+  outline: none;
+}
+
 @media (min-width: 660px) {
+  .plan {
+    padding-left: 0;
+  }
+
   .plan__table_mobile {
     display: none;
   }
@@ -59,10 +99,12 @@
   .plan__table_tablet {
     display: block;
     width: 100%;
+    border-collapse: collapse;
   }
 
   .plan__wrapper {
-    padding: 0 20px;
+    padding: 100px 20px;
+    padding-bottom: 49px;
     box-sizing: border-box;
     width: 660px;
     margin: 0 auto;
@@ -71,8 +113,12 @@
   .plan__column {
     width: 152px;
     text-transform: none;
-    padding: 10px 61px;
+    padding: 10px 0;
     box-sizing: border-box;
+    text-align: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
   }
 
   .plan__column svg {
@@ -81,6 +127,7 @@
 
   .plan__header_hidden {
     opacity: 0;
+    border: none;
   }
 
   .plan__row th {
@@ -89,6 +136,7 @@
 
   .plan__column__name {
     padding: 7px 10px;
+    padding-left: 22px;
     width: 152px;
     text-transform: none;
     font-weight: normal;
@@ -106,8 +154,9 @@
 
 @media (min-width: 1200px) {
   .plan__wrapper {
-    width: 920px;
-    padding: 0 130px;
+    width: 1200px;
+    padding: 100px 130px;
+    padding-bottom: 49px;
   }
 
   .plan__column {

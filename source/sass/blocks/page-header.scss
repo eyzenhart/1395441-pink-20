@@ -8,6 +8,10 @@
   z-index: 100;
 }
 
+.page-header_static {
+  position: static;
+}
+
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
@@ -82,7 +86,7 @@
   }
 
   .page-header__wrapper {
-    width: 100%;
+    width: 1200px;
     padding: 20px 130px;
     padding-top: 27px;
   }

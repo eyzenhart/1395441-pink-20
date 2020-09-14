@@ -16,7 +16,7 @@
 
 .user-photo__header__wrapper {
   padding: 0 20px;
-  padding-top: 22px;
+  padding-top: 102px;
   padding-bottom: 80px;
 }
 
@@ -31,14 +31,22 @@
 }
 
 .user-photo__description {
+  width: 280px;
   margin: 0 auto;
   margin-top: 2px;
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
-  padding-top: 43px;
+  box-sizing: border-box;
+}
+
+.user-photo__description__wrapper {
+  width: 320px;
+  padding: 43px 20px;
   padding-bottom: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .user-photo__list {
@@ -126,10 +134,12 @@
   padding: 25px 20px;
   padding-top: 0;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .user-photo__winner__indent {
   background-color: #F2F2F2;
+  padding: 25px 10px;
 }
 
 @media (min-width: 660px) {
@@ -142,6 +152,15 @@
   .user-photo__img_winner {
     width: 100%;
     height: auto;
+  }
+
+  .user-photo__description {
+    width: 660px;
+  }
+
+  .user-photo__description__wrapper {
+    width: 660px;
+    box-sizing: border-box;
   }
 
   .user-photo__img {

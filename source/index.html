@@ -11,12 +11,12 @@
   <body class="page__body">
       
 
-      <header class="page-header">
-        <div class="page-header__wrapper">
+      <header class="page-header page-header_static">
+        <div class="page-header__wrapper page-header__wrapper_dark">
           <a class="page-header__logo" href="#"></a>
-          <button class="main-nav__toggle main-nav__toggle_open" aria-label="Открыть меню"></button>
+          <button class="main-nav__toggle main-nav__toggle_close visually-hidden" aria-label="Открыть меню"></button>
           <nav class="main-nav">
-            <div class="main-nav__popup">
+            <div class="main-nav__popup modal-show">
               <ul class="main-nav__list site-list">
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#">Главная</a>
@@ -51,11 +51,13 @@
                 Взгляните на жизнь иначе!
               </p>
             </div>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
-              <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
-              <img src="img/iphone-hand-mobile@1x.png" class="app__img" alt="Демонстрация приложения на телефоне" width="280" height="286">
-            </picture>
+            <div class="app__photo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+                <img src="img/iphone-hand-mobile@1x.png" class="app__img" alt="Демонстрация приложения на телефоне" width="280" height="286">
+              </picture>
+            </div>
             <div class="app__more">
               <div class="app__more_wrapper">
                 <a class="app__button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
@@ -342,9 +344,9 @@
               </tr>
             </table>
             <div class="plan__buttons">
-            <button class="plan__button" type="button">1</button>
-            <button class="plan__button plan__button_current" type="button">2</button>
-            <button class="plan__button" type="button">3</button>
+            <button class="plan__button" type="button"></button>
+            <button class="plan__button plan__button_current" type="button"></button>
+            <button class="plan__button" type="button"></button>
             </div>
           </div>
         </section>

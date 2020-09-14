@@ -35,7 +35,7 @@
 }
 
 .contest__personal__wrapper {
-  width: 100%;
+  // width: 100%;
   box-sizing: border-box;
 }
 
@@ -55,7 +55,7 @@
 }
 
 .contest__feedback__wrapper {
-  width: 100%;
+  // width: 100%;
   box-sizing: border-box;
 }
 
@@ -87,6 +87,7 @@
 .contest__achievement,
 .contest__app {
   background-color: #F2F2F2;
+  width: 100%;
 }
 
 .app__legend {
@@ -264,12 +265,18 @@
 .contest__textarea:hover {
   border: 2px solid #283645;
   border-radius: 1px;
+  padding-top: 12px;
+  padding-left: 17px;
+  padding-right: 6px;
 }
 
 .contest__textarea:focus {
   border: 2px solid #D22856;
   border-radius: 1px;
   outline: none;
+  padding-top: 12px;
+  padding-left: 17px;
+  padding-right: 6px;
 }
 
 .contest__extra {
@@ -326,11 +333,15 @@
 }
 
 .contest__app {
+  box-sizing: border-box;
   padding: 40px 20px;
+  width: 100%;
+  background-color: #F2F2F2;
 }
 
 .contest__app__wrapper {
-  width: 100%;
+  width: 320px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -341,19 +352,27 @@
 }
 
 .contest__achievement {
+  width: 100%;
+  box-sizing: border-box;
   padding: 40px 20px;
   padding-bottom: 45px;
+  background-color: #F2F2F2;
+
 }
 
 .contest__achievement__wrapper {
-  width: 100%;
+  width: 320px;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .achievement__legend {
   margin-bottom: 44px;
 }
 
+.contest__extra-info_desktop {
+  display: none;
+}
 
 @media (min-width: 660px) {
   .form {
@@ -361,12 +380,14 @@
   }
 
   .contest__personal {
-    width: 660px;
+    width: 620px;
     padding: 20px 20px;
     padding-bottom: 40px;
+    box-sizing: border-box;
   }
 
   .contest__personal__wrapper {
+    width: 100%;
     order: -3;
   }
 
@@ -375,10 +396,10 @@
   }
 
   .contest__contacts {
-    width: 100%;
+    width: 620px;
     padding: 40px 20px;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 60px;
   }
 
@@ -399,10 +420,11 @@
     margin-bottom: 0;
   }
 
-  .contest__achievement,
-  .contest__app {
-    background-color: #FFFFFF;
-  }
+  // .contest__achievement,
+  // .contest__app {
+  //   background-color: #FFFFFF;
+  //   width: 100%;
+  // }
 
   .personal__item {
     width: 100%;
@@ -429,13 +451,15 @@
   }
 
   .contest__app {
-    padding: 46px 82px;
+    // padding: 46px 82px;
+    padding-top: 82px;
     padding-bottom: 56px;
     box-sizing: border-box;
+    background-color: #FFFFFF;
   }
 
   .contest__app__wrapper {
-    width: 100%;
+    width: 620px;
     padding: 0 20px;
     margin-bottom: 60px;
     box-sizing: border-box;
@@ -444,10 +468,11 @@
 
   .contest__achievement {
     padding: 48px 82px;
+    background-color: #FFFFFF;
   }
 
   .contest__achievement__wrapper {
-    width: 100%;
+    width: 660px;
     padding: 0 20px;
     box-sizing: border-box;
     margin-bottom: 65px;
@@ -485,7 +510,7 @@
   }
 
   .contest__feedback {
-    width: 100%;
+    width: 660px;
     padding: 35px 62px;
     padding-bottom: 45px;
     margin-bottom: 65px;
@@ -494,6 +519,7 @@
   .contest__feedback__wrapper {
     width: 660px;
     padding: 0 20px;
+    margin: 0 auto;
   }
 
   .contest__textarea {
@@ -509,6 +535,13 @@
 @media (min-width: 1200px) {
   .form {
     margin-bottom: 0;
+  }
+
+  .form__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 130px;
+    box-sizing: border-box;
   }
   
   .contest__form {
@@ -545,6 +578,8 @@
   }
 
   .contest__achievement {
+    width: 940px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -552,6 +587,7 @@
   }
 
   .contest__achievement__wrapper {
+    width: 100%;
     padding: 0;
     margin-bottom: 60px;
   }
@@ -561,6 +597,7 @@
   }
 
   .contest__contacts {
+    width: 940px;
     display: flex;
     flex-direction: row;
     padding: 44px 50px;
@@ -569,6 +606,10 @@
   .contest__contacts__wrapper {
     width: 100%;
     padding: 0;
+  }
+
+  .contest__feedback {
+    width: 940px;
   }
 
   .contest__feedback__wrapper {
@@ -607,5 +648,13 @@
 
   .personal__item:last-of-type {
     margin-bottom: 0;
+  }
+
+  .contest__extra-info_mobile {
+    display: none;
+  }
+
+  .contest__extra-info_desktop {
+    display: block;
   }
 }

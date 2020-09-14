@@ -5,14 +5,20 @@
   color: #FFFFFF;
 }
 
+
 .app__more {
-  width: 320px;
+  width: 100%;
   padding: 0 20px;
   padding-top: 28px;
   padding-bottom: 30px;
   box-sizing: border-box;
   position: relative;
   z-index: 20;
+}
+
+.app__more__wrapper {
+  width: 100%;
+
 }
 
 .app__header {
@@ -69,7 +75,14 @@
   align-items: center;
 }
 
+
+
+.app__img {
+  margin: 0 auto;
+}
+
 .app__description {
+  width: 280px;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -81,6 +94,8 @@
 @media (min-width: 320px) and (max-width: 659px) {
   .app {
     background-image: url(../../img/bg-back-mobile@1x.jpg);
+    background-size: auto;
+    background-position: center top;
     width: 100%;
   }
 
@@ -93,6 +108,12 @@
   .app__more {
     width: 100%;
     background-color: #1D2631;
+    margin: 0 auto;
+  }
+
+  .app__photo {
+    display: flex;
+    justify-content: center;
   }
 
   .app__img {
@@ -118,6 +139,7 @@
     height: auto;
     background-image: url(../../img/bg-back-tablet@1x.jpg);
     background-repeat: no-repeat;
+    background-position: center center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

@@ -51,112 +51,120 @@
         </p>
       </div>
 
+      <div class="form__wrapper">
+        <section class="form">
+          <form class="contest__form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="contest__personal__wrapper">
+              <fieldset class="contest__personal contest__fieldset_special">
+                <label class="personal__item contest__label">
+                  <span>Фамилия:</span>
+                  <input class="contest__text" type="text" name="second-name" placeholder="Укажите фамилию *" required>
+                </label>
+                <label class="personal__item contest__label">
+                  <span>Имя:</span>
+                  <input class="contest__text" type="text" name="first-name" placeholder="Введите ваше имя *" required>
+                </label>
+                <label class="personal__item contest__label">
+                  <span>Отчество:</span>
+                  <input class="contest__text" type="text" name="last-name" placeholder="Ну и отчество тоже">
+                </label>
+              </fieldset>
+            </div>
 
-      <section class="form">
-        <form class="contest__form" action="https://echo.htmlacademy.ru" method="POST">
-          <div class="contest__personal__wrapper">
-            <fieldset class="contest__personal contest__fieldset_special">
-              <label class="personal__item contest__label">
-                <span>Фамилия:</span>
-                <input class="contest__text" type="text" name="second-name" placeholder="Укажите фамилию *" required>
-              </label>
-              <label class="personal__item contest__label">
-                <span>Имя:</span>
-                <input class="contest__text" type="text" name="first-name" placeholder="Введите ваше имя *" required>
-              </label>
-              <label class="personal__item contest__label">
-                <span>Отчество:</span>
-                <input class="contest__text" type="text" name="last-name" placeholder="Ну и отчество тоже">
-              </label>
-            </fieldset>
-          </div>
+            <div class="contest__bg">
+              <div class="contest__achievement__wrapper">
+                <fieldset class="contest__achievement contest__fieldset">
+                  <legend class="achievement__legend contest__legend">
+                    Ваши безбашенные достижения в путешествии
+                  </legend>
+                    <input class="contest__checkbox" type="checkbox" id="contest__checkbox_1" name="shark-selfie" checked>
+                    <label for="contest__checkbox_1" class="achievement__item">
+                      Сделал селфи с акулой
+                    </label>
+                    <input class="contest__checkbox" type="checkbox" id="contest__checkbox_2" name="burned" checked>
+                    <label for="contest__checkbox_2" class="achievement__item">
+                      Обгорел на пляже
+                    </label>
+                    <input class="contest__checkbox" type="checkbox" id="contest__checkbox_3" name="chuck-norris">
+                    <label for="contest__checkbox_3" class="achievement__item">
+                    Видел Чака Норриса
+                    </label>
+                    <input class="contest__checkbox" type="checkbox" id="contest__checkbox_4" name="souvenirs">
+                    <label for="contest__checkbox_4" class="achievement__item">
+                      Накупил сувениров
+                    </label>
+                    <input class="contest__checkbox" type="checkbox" id="contest__checkbox_5" name="tower" checked>
+                    <label for="contest__checkbox_5" class="achievement__item">
+                      Удержал башню
+                    </label>
+                    <input class="contest__checkbox" type="checkbox" id="contest__checkbox_6" name="hotel" checked>
+                    <label for="contest__checkbox_6" class="achievement__item">
+                      Разгромил отель
+                    </label>
+                </fieldset>
+              </div>
+            </div>
 
-          <div class="contest__achievement__wrapper">
-            <fieldset class="contest__achievement contest__fieldset">
-              <legend class="achievement__legend contest__legend">
-                Ваши безбашенные достижения в путешествии
-              </legend>
-                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_1" name="shark-selfie" checked>
-                <label for="contest__checkbox_1" class="achievement__item">
-                  Сделал селфи с акулой
-                </label>
-                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_2" name="burned" checked>
-                <label for="contest__checkbox_2" class="achievement__item">
-                  Обгорел на пляже
-                </label>
-                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_3" name="chuck-norris">
-                <label for="contest__checkbox_3" class="achievement__item">
-                Видел Чака Норриса
-                </label>
-                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_4" name="souvenirs">
-                <label for="contest__checkbox_4" class="achievement__item">
-                  Накупил сувениров
-                </label>
-                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_5" name="tower" checked>
-                <label for="contest__checkbox_5" class="achievement__item">
-                  Удержал башню
-                </label>
-                <input class="contest__checkbox" type="checkbox" id="contest__checkbox_6" name="hotel" checked>
-                <label for="contest__checkbox_6" class="achievement__item">
-                  Разгромил отель
-                </label>
-            </fieldset>
-          </div>
+            <div class="contest__contacts__wrapper">
+              <fieldset class="contest__contacts contest__fieldset">
+                <legend class="contacts__legend contest__legend">
+                  Контактная информация
+                </legend>
+                <div class="contest__fieldset-content">
+                  <label class="contacts__item contest__label">
+                    <span>Номер телефона</span>
+                    <input class="contest__text" type="tel" name="phone" placeholder="Номер, пожалуйста">
+                  </label>
+                  <label class="contacts__item contest__label">
+                    <span>Адрес почты</span>
+                    <input class="contest__text" type="email" name="email" placeholder="Введите почту *" required>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+            
+            <div class="contest__app__wrapper">
+              <fieldset class="contest__app contest__fieldset">
+                <legend class="app__legend contest__legend">
+                  С каким приложением путешествовали?
+                </legend>
+                  <input class="contest__radio" type="radio" id="contest__radio_1" name="contest-radio" checked>
+                  <label for="contest__radio_1" class="contest__app__item">
+                    <span>Pink для iOS</span>
+                  </label>
+                  <input class="contest__radio" type="radio" id="contest__radio_2" name="contest-radio">
+                  <label for="contest__radio_2" class="contest__app__item">
+                    <span>Pink на Android</span>
+                  </label>
+                  <input class="contest__radio" type="radio" id="contest__radio_3" name="contest-radio">
+                  <label for="contest__radio_3" class="contest__app__item">
+                    <span>Windows Phone</span>
+                  </label>
+              </fieldset>
+            </div>
 
-          <div class="contest__contacts__wrapper">
-            <fieldset class="contest__contacts contest__fieldset">
-              <legend class="contacts__legend contest__legend">
-                Контактная информация
-              </legend>
-              <label class="contacts__item contest__label">
-                <span>Номер телефона</span>
-                <input class="contest__text" type="tel" name="phone" placeholder="Номер, пожалуйста">
-              </label>
-              <label class="contacts__item contest__label">
-                <span>Адрес почты</span>
-                <input class="contest__text" type="email" name="email" placeholder="Введите почту *" required>
-              </label>
-            </fieldset>
-          </div>
-          
-          <div class="contest__app__wrapper">
-            <fieldset class="contest__app contest__fieldset">
-              <legend class="app__legend contest__legend">
-                С каким приложением путешествовали?
-              </legend>
-                <input class="contest__radio" type="radio" id="contest__radio_1" name="contest-radio" checked>
-                <label for="contest__radio_1" class="contest__app__item">
-                  <span>Pink для iOS</span>
+            <div class="contest__feedback__wrapper">
+              <fieldset class="contest__feedback contest__fieldset">
+                <legend class="feedback__legend contest__legend">
+                  Опишите свои эмоции
+                </legend>
+                <label class="visually-hidden">
+                  Форма для развернутого отзыва
                 </label>
-                <input class="contest__radio" type="radio" id="contest__radio_2" name="contest-radio">
-                <label for="contest__radio_2" class="contest__app__item">
-                  <span>Pink на Android</span>
-                </label>
-                <input class="contest__radio" type="radio" id="contest__radio_3" name="contest-radio">
-                <label for="contest__radio_3" class="contest__app__item">
-                  <span>Windows Phone</span>
-                </label>
-            </fieldset>
-          </div>
+                <textarea class="contest__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="6" cols="20"></textarea>
+              </fieldset>
+            </div>
 
-          <div class="contest__feedback__wrapper">
-            <fieldset class="contest__feedback contest__fieldset">
-              <legend class="feedback__legend contest__legend">
-                Опишите свои эмоции
-              </legend>
-              <label class="visually-hidden">
-                Форма для развернутого отзыва
-              </label>
-              <textarea class="contest__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="6" cols="20"></textarea>
-            </fieldset>
-          </div>
-
-          <div class="contest__extra">
-            <button class="contest__button" type="submit"><span>Отправить форму</span></button>
-            <p class="contest__extra-info"><span class="contest__special">*</span> — обязательные <span class="contest__hidden-text">для заполнения</span> поля</p>
-          </div>
-        </form>
-      </section>
+            <div class="contest__extra">
+              <button class="contest__button" type="submit"><span>Отправить форму</span></button>
+              <div class="contest__extra-info">
+                <p class="contest__extra-info_mobile"><span class="contest__special">*</span> — обязательные поля</p>
+                <p class="contest__extra-info_desktop"><span class="contest__special">*</span> — обязательные для заполнения поля</p>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
 
 
     </main>

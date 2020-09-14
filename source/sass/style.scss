@@ -1,20 +1,25 @@
 // Начните писать стили здесь
+@import "fonts.scss";
+@import "scaffolding.scss";
+
 @import "blocks/page.scss";
 @import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
 @import "blocks/app.scss";
 @import "blocks/advantages.scss";
 @import "blocks/review.scss";
+@import "blocks/research.scss";
 @import "blocks/plan.scss";
 @import "blocks/feedback.scss";
-@import "blocks/page-footer.scss";
+@import "blocks/map.scss";
+
 @import "blocks/user-photo.scss";
 @import "blocks/editor.scss";
 @import "blocks/contest.scss";
 @import "blocks/form.scss";
-@import "blocks/main-nav.scss";
-@import "fonts.scss";
-@import "scaffolding.scss";
-@import "blocks/research.scss";
-@import "blocks/map.scss";
+
+@import "blocks/page-footer.scss";
+
 @import "blocks/window-error.scss";
 @import "blocks/window-success.scss";
